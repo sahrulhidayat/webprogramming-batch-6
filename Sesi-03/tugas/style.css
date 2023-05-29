@@ -1,0 +1,143 @@
+html {
+  background-color: white;
+}
+
+body {
+  margin: 0;
+}
+
+nav {
+  background-color: white;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 20px 12px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000000;
+  text-transform: uppercase;
+  padding: 6px;
+}
+
+nav ul li a:hover {
+  background-color: aliceblue;
+}
+
+section {
+  margin: 20px;
+}
+
+form {
+  background-color: white;
+}
+
+form input {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.submit {
+  border: none;
+}
+
+form input[type="submit"] {
+  margin: 0;
+  background-color: green;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#profile {
+  display: flex;
+  padding-right: 50px;
+}
+
+.profile-container {
+  display: flex;
+}
+
+.profile-photo {
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.profile-text button {
+  margin: 4px;
+}
+
+.profile-text button:first-child {
+  border-radius: 10px;
+  border: 2px solid;
+  border-color: #4CAF50;
+  background-color: #4CAF50; 
+  color: white;
+  padding: 10px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.profile-text button:first-child:hover {
+  border-radius: 10px;
+  background-color: white; 
+  color: #4CAF50;
+  padding: 10px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.profile-text button:last-child {
+  border: 2px solid;
+  border-radius: 10px;
+  background-color: transparent; 
+  border-color: #4CAF50;
+  color: #4CAF50;
+  padding: 10px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.profile-text button:last-child:hover {
+  border: 2px solid;
+  border-radius: 10px;
+  background-color: #4CAF50; 
+  border-color: #4CAF50;
+  color: white;
+}
+
+.profile-text, h2 {
+  font-weight: normal;
+  font-size: medium;
+}
+
+.profile-photo img {
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(192, 72, 25);
+}
+
+#detail, td {
+  padding-bottom: 20px;
+}
+
+#detail, td:first-child {
+  font-weight: bold;
+  padding-right: 20px;
+}
+
+
