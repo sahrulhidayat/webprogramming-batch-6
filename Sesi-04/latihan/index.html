@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        //   create console
+        console.log("Test");
+        // create alert
+        alert("Test");
+        // create prompt
+        var a, b, c;
+        a = prompt("Nama anda siapa ?");
+        console.log("Hello : " + a);
+      
+        // kondisi
+        var a = "hungry";
+        if (a != "hungry") {
+          console.log("eat");
+        } else {
+          console.log("iam happy");
+        }
+      
+        // for
+        for (let index = 1; index <= 10; index++) {
+          kondisi(index);
+          if (index % 2) {
+            console.log("Hasilnya " + index, "ODD !");
+          } else {
+            console.log("Output " + index, "EVEN !");
+          }
+        }
+      
+        function kondisi(index) {
+          console.log("Looping " + index);
+          if (index == 5) {
+            alert("Sudah di urutan " + index);
+          }
+          if (index == 6) {
+            console.log("Sudah di urutan " + index);
+          }
+        }
+      </script>
+</head>
+<body>
+</body>
+</html>

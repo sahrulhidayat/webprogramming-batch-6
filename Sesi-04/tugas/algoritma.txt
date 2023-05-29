@@ -1,0 +1,46 @@
+bagaimana cara menjalankan kipas angin :
+--------------------------------------
+flow :
+1. siapkan kipas angin
+2. hubungkan kabel nya ke listrik/terminal
+3. pastikan daya listrik tidak padam
+4. tekan tombol on pada kipas angin
+5. pastikan baling baling kipas angin berputar dengan lancar
+6. kipas angin berhasil dihidupkan
+
+pseudocode :
+
+echo "Langkah-langkah menyalakan kipas angin"
+echo "Menghubungkan kipas angin ke terminal"
+
+if (listrik == "tidak padam") :
+  echo "Terhubung ke listrik"
+  echo "Menekan tombol on pada kipas"
+else if (listrik == "padam") :
+  echo "Daya listrik tidak mencukupi"
+
+
+Menghitung keliling & luas lingkaran :
+-----------------------------
+flow:
+- memulai program
+- enentukan nilai PHI
+- merekam input jari-jari lingkaran
+- menghitung keliling lingkaran
+- menghitung luas lingkaran
+- menampilkan hasil perhitungan keliling lingkaran
+- menampilkan hasil perhitungan luas lingkaran
+    
+
+pseudocode :
+
+SHOW "Menghitung keliling lingkaran"
+
+DEFINE PHI = 3,14
+READ INPUT "jari-jari"
+COMPUTE keliling = (PHI x "jari-jari" x 2)
+COMPUTE luas = (PHI x "jari-jari" x "jari-jari")
+SHOW keliling
+SHOW luas
+
+

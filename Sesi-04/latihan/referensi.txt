@@ -1,0 +1,66 @@
+reference pembelajaran :
+
+php :
+<?php
+  $a = "hungry";
+  $output = "";
+
+  // ternary
+  $out = $a == "hungry" ? 'eat' : 'iam happy';
+
+  // simple
+  if ($a == "hungry") :
+      $output = "eat";
+  else :
+      $output = "iam happy";
+  endif;
+
+  // kurung kurawal {}
+  if ($a == "hungry") {
+      $output = "eat";
+  } else {
+      $output = "iam happy";
+  }
+
+  var_dump("Hasil nya : $out");
+?>
+
+java script :
+<script>
+  //   create console
+  console.log("Test");
+  // create alert
+  alert("Test");
+  // create prompt
+  var a, b, c;
+  a = prompt("Nama anda siapa ?");
+  console.log("Hello : " + a);
+
+  // kondisi
+  var a = "hungry";
+  if (a != "hungry") {
+    console.log("eat");
+  } else {
+    console.log("iam happy");
+  }
+
+  // for
+  for (let index = 1; index <= 10; index++) {
+    kondisi(index);
+    if (index % 2) {
+      console.log("Hasilnya " + index, "ODD !");
+    } else {
+      console.log("Output " + index, "EVEN !");
+    }
+  }
+
+  function kondisi(index) {
+    console.log("Looping " + index);
+    if (index == 5) {
+      alert("Sudah di urutan " + index);
+    }
+    if (index == 6) {
+      console.log("Sudah di urutan " + index);
+    }
+  }
+</script>

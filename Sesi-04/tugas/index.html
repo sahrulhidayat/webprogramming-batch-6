@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    body {
+      text-align: center;
+    }
+  </style>
+
+  <body>
+    <h1>Menghitung keliling lingkaran</h1>
+
+    <input
+      type="number"
+      id="jari_jari"
+      placeholder="Masukkan jari-jari lingkaran"
+    />
+    <button onclick="hitung()">Hitung</button>
+
+    <br />
+    <p>Keliling lingkaran adalah:</p>
+    <p id="keliling">0</p>
+
+    <p>Luas lingkaran adalah:</p>
+    <p id="luas">0</p>
+
+    <script>
+      console.log("Langkah-langkah menyalakan kipas angin");
+
+      var dayaListrik = 1;
+
+      console.log("Menghubungkan kipas angin ke terminal");
+
+      if (dayaListrik) {
+        console.log("Terhubung ke listrik");
+        console.log("Menekan tombol on pada kipas");
+        console.log("Kipas angin berhasil dihidupkan");
+      } else if (dayaListrik != 1) {
+        console.log("Daya listrik tidak mencukupi");
+      }
+
+      const PHI = 3.14;
+
+      function hitung() {
+        var jariJari = document.getElementById("jari_jari").value;
+        const keliling = PHI * jariJari * 2;
+        const luas = PHI * jariJari * jariJari;
+
+        document.getElementById("keliling").innerHTML = keliling;
+        document.getElementById("luas").innerHTML = luas;
+      }
+    </script>
+  </body>
+</html>
