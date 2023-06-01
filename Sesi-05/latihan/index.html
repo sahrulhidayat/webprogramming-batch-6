@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Javascript</title>
+  </head>
+
+  <body style="padding: 20px">
+    <!-- <button id="tombol" onclick="ubahText()">Klik aku</button> -->
+
+    <h1>Hitung Maju Mundur :</h1>
+    <button onclick="kurangSatu()">Mundur</button>
+    <button onclick="tambahSatu()">Maju</button>
+    <br />
+
+    <p id="bilangan">10</p>
+
+    <input type="number" name="grade" id="grade" required />
+    <button onclick="hitungGrade()">Hitung Nilai</button>
+
+    <!-- <div id="kata"></div>
+    <div id="nama"></div>
+    <div id="usia"></div>
+    <div id="kendaraan"></div>
+    <div id="status"></div>
+    <br>
+
+    <div id="penjumlahan"></div>
+    <div id="pengurangan"></div>
+    <div id="perkalian"></div>
+    <div id="pembagian"></div>
+    <div id="modulus"></div>
+
+    <br> -->
+
+    <div id="hasil"></div>
+
+    <script>
+      function ubahText() {
+        document.getElementById("tombol").innerHTML = "Hello guys";
+      }
+
+      let nilai = 10;
+
+      function tambahSatu() {
+        nilai++;
+        document.getElementById("bilangan").innerHTML = nilai;
+      }
+
+      function kurangSatu() {
+        nilai--;
+        document.getElementById("bilangan").innerHTML = nilai;
+      }
+
+      function hitungGrade() {
+
+        var nilai = document.getElementById("grade").value
+
+        let grade =""
+
+        if (nilai >= 90) {
+          grade = "A";
+        } else if (nilai >= 80) {
+          grade = "B";
+        } else if (nilai >= 70) {
+          grade = "C";
+        } else if (nilai >= 60) {
+          grade = "D";
+        } else {
+          grade = "E";
+        }
+
+        document.getElementById("hasil").innerHTML =
+          "Hasil nilai Anda : " + grade;
+      }
+    </script>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Sesi 5</title>
+</head>
+<body>
+    <label for="pesan">Pesan        :</label>
+    <input id="pesan" name="pesan" type="text" placeholder="ketikkan pesan" /><br>
+    <label for="jumlah">Berapa kali  :</label>
+    <input id="jumlah" name="jumlah" type="number" placeholder="ketikkan angka" /><br>
+    <button onclick="cetak()">Cetak!</button>
+    
+    <ol id="hasil"></ol>
+
+    <script>
+
+        const hasil = document.getElementById("hasil")
+
+        function cetak() {
+            hasil.innerHTML = ""
+            const pesan = document.getElementById("pesan").value
+            const jumlah = document.getElementById("jumlah").value
+            let hitung = 0
+            
+            while(hitung < jumlah) {
+                console.log(pesan)
+                for(hitung = 0; hitung < jumlah; hitung++) {
+                    hasil.innerHTML = `${hasil.innerHTML}<li> ${pesan} </li>`
+                }
+            }
+        }
+    </script>
+</body>
+</html>
