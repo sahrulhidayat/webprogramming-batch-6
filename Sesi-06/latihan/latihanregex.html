@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Regex</title>
+</head>
+<body>
+
+
+    <script>
+        var foo = "Belajar Javascript"
+        var pola = /Javascript/
+        
+        var foo1 = "1 Jam sama dengan 60 menit, juga sama dengan 3600 detik"
+        var pola2 = /\d+/g
+
+        console.log(pola.test(foo))
+        console.log(/Belajar/.test(foo))
+        console.log(/belajar/.test(foo))
+
+        console.log(pola.exec(foo1))
+        console.log(pola.exec(foo1))
+        console.log(pola.exec(foo1))
+        console.log(pola.exec(foo1))
+
+    </script>
+    
+</body>
+</html>

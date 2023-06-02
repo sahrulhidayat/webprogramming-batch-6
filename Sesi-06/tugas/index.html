@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas sesi 6</title>
+</head>
+<body>
+
+    <p class="paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Quo quaerat recusandae qui ullam eaque cumque ea fugit,
+        debitis commodi ipsum illo dolorum consequatur sed laudantium suscipit quis magni,
+        maiores in?
+    </p>
+    <p class="paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Quo quaerat recusandae qui ullam eaque cumque ea fugit,
+        debitis commodi ipsum illo dolorum consequatur sed laudantium suscipit quis magni,
+        maiores in?
+    </p>
+    <p class="paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Quo quaerat recusandae qui ullam eaque cumque ea fugit,
+        debitis commodi ipsum illo dolorum consequatur sed laudantium suscipit quis magni,
+        maiores in?
+    </p>
+
+    <button onclick="stop()">Berhenti!</button>
+
+    <script>
+        const interval = setInterval(changeColor, 1000)
+        const timeout = setTimeout(stop, 10000)
+        
+        function stop() {
+            clearInterval(interval)
+        }
+
+        function changeColor() { 
+            const paragraf = document.getElementsByClassName("paragraf")
+            paragraf[0].style.color = generateColor()
+            paragraf[1].style.color = generateColor()
+            paragraf[2].style.color = generateColor()
+        }
+
+        function generateColor() {
+            var randomColor = Math.floor(Math.random()*16777215).toString(16)
+            return `#${randomColor}`
+        }
+
+    </script>
+
+</body>
+</html>

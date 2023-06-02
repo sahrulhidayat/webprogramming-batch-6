@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Regex</title>
+</head>
+<body>
+
+
+    <script>
+        var foo = "Belajar Javascript"
+
+        console.log(/Javascript/.test(foo))
+        console.log(/Javascript/.test(foo))
+        console.log(/Belajar/.test(foo))
+        console.log(/belajar/.test(foo))
+        console.log(/Java/.test(foo))
+        console.log(/ajar/.test(foo))
+
+        var pola = /[abcde]../
+
+        console.log(pola.test("abaa"))
+        console.log(pola.test("fba"))
+        console.log(pola.test("1dd"))
+        console.log(pola.test("add"))
+        console.log(pola.test(" dd"))
+        console.log(pola.test("belajar"))
+
+    </script>
+    
+</body>
+</html>
