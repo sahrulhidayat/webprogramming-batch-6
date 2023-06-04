@@ -24,14 +24,23 @@
         maiores in?
     </p>
 
+    <br>
+    <div>Warna teks akan berhenti berubah setelah 10 detik !</div>
+
+    <button onclick="changeColor()">Rubah!</button>
     <button onclick="stop()">Berhenti!</button>
+    <button onclick="infiniteChange()">Tanpa henti!</button>
 
     <script>
         const interval = setInterval(changeColor, 1000)
         const timeout = setTimeout(stop, 10000)
-        
+
         function stop() {
             clearInterval(interval)
+        }
+
+        function infiniteChange() {
+            clearTimeout(timeout)
         }
 
         function changeColor() { 
@@ -42,7 +51,7 @@
         }
 
         function generateColor() {
-            var randomColor = Math.floor(Math.random()*16777215).toString(16)
+            const randomColor = Math.floor(Math.random()*16777215).toString(16)
             return `#${randomColor}`
         }
 
